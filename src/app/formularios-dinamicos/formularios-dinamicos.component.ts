@@ -41,11 +41,11 @@ export class FormulariosDinamicosComponent implements OnInit {
     let text = this.render.createElement('input');
 
     this.render.appendChild(divHtml, text);
-    this.render.setAttribute(text, 'formControlName', 'campo');
     this.render.setAttribute(text, 'type', 'text');
+    this.render.setAttribute(text, 'formControlName', 'campo');
 
+    this.formTest.addControl('campo', new FormControl(''));
 
-    this.formTest.addControl('campo', new FormControl('', [Validators.required]));
 
 
     // this.formTest.addControl('campo', new FormGroup({}));
