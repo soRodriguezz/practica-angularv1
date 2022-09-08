@@ -1,0 +1,18 @@
+
+<form [formGroup]="formTest" (ngSubmit)="enviar()">
+    <div>
+        <input type="text" formControlName="name" >
+    </div>
+
+    <div #divTest>
+        <input #button type="text" formControlName="lastname">
+    </div>
+
+    <div >
+        <button type="submit" [disabled]="validarFormulario()">Enviar</button>
+        <button type="button" (click)="agregarCampo()">Agregar</button>
+    </div>
+
+</form>
+
+<pre> {{ formTest.value | json }}</pre>
