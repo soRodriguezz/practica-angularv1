@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HostListenerComponent } from './host-listener/host-listener.component';
+import { PipeArgsPipe } from './pipes/pipe-args.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HostListenerComponent,
+    PipeArgsPipe
   ],
   imports: [
     BrowserModule,
