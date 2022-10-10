@@ -1,11 +1,11 @@
-import { Component, ElementRef, HostListener, Renderer2, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, OnDestroy, Renderer2, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-host-listener',
   templateUrl: './host-listener.component.html',
   styleUrls: ['./host-listener.component.css']
 })
-export class HostListenerComponent  {
+export class HostListenerComponent {
   @ViewChild('player') player!: ElementRef;
   counter = 0;
   counter2 = 0;
@@ -14,6 +14,7 @@ export class HostListenerComponent  {
   constructor(
     private render2: Renderer2
   ){}
+
 
   @HostListener('window:keydown.space', ['$event']) // toma las presiones del espacio
   handleKeyDown(event: KeyboardEvent) {

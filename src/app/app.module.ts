@@ -8,6 +8,8 @@ import { PipeArgsPipe } from './pipes/pipe-args.pipe';
 import { DirectivePersonalizadaDirective } from './directives/directive-personalizada.directive';
 import { FormulariosDinamicosComponent } from './formularios-dinamicos/formularios-dinamicos.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { UsoDirectivasComponent } from './uso-directivas/uso-directivas.component';
+import { PersonalizacionDirective } from './uso-directivas/directives/personalizacion.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     HostListenerComponent,
     PipeArgsPipe,
     DirectivePersonalizadaDirective,
-    FormulariosDinamicosComponent
+    FormulariosDinamicosComponent,
+    UsoDirectivasComponent,
+    PersonalizacionDirective
   ],
   imports: [
     BrowserModule,

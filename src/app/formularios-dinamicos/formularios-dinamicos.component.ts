@@ -46,8 +46,6 @@ export class FormulariosDinamicosComponent implements OnInit {
 
     this.formTest.addControl('campo', new FormControl(''));
 
-
-
     // this.formTest.addControl('campo', new FormGroup({}));
 
     // let formPregunta: FormGroup = this.formTest.get('campo') as FormGroup;
